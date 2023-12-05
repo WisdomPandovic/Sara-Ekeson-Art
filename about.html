@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
+    <link rel="stylesheet" href="shop.css">
     <style>
         body {
             font-family: 'Krona One', sans-serif;
@@ -14,15 +15,9 @@
             color: #333;
         }
 
-        header {
-            background: #007bff;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-        }
-
-        section {
-            padding: 20px;
+        .about-section {
+            width: 90%;
+            margin: auto;
         }
 
         .about-text {
@@ -35,11 +30,42 @@
 
 <body>
 
-    <header>
-        <h1>About Us</h1>
-    </header>
+    <div class="hamburger_container flex">
+        <label for="menu_check">&#9776;</label>
+        <input type="checkbox" id="menu_check">
+        <div class="hide_nav_container">
+            <nav>
+                <ul>
+                    <li> <a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="meet-artist.html">Meet the Artist</a></li>
+                </ul>
+            </nav>
+        </div>
+       
+    </div>
+    <div class="body">
+        <header>
+            <h1>Sara Ekeson</h1>
+        </header>
 
-    <section>
+        <nav>
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="meet-artist.html">Meet the Artist</a>
+        </nav>
+
+        <section class="hero-section">
+        <h2>Welcome to my Art World</h2>
+        <p>Explore a collection of my unique and inspiring artworks.</p>
+        </section>
+    </div>
+
+    <section class="about-section">
         <div class="about-text">
             <p>Welcome to our art community, where creativity knows no bounds. At Sara's Art we believe in the transformative power of art to inspire, uplift, and connect individuals from all walks of life.</p>
 
@@ -50,6 +76,30 @@
             <p>Join us on this journey of artistic discovery. Sara Art is more than an app; it's a celebration of creativity, a sanctuary for artists and art lovers to converge and appreciate the boundless beauty that art brings into our lives.</p>
         </div>
     </section>
+
+    <section class="subscribe">
+        <div class="dont-miss-section">
+            <p class="dont-miss-text">DON'T MISS A THING</p>
+            <p>☞ SIGN UP TO RECEIVE THE LATEST NEWS AND UPDATES ☜</p>
+        </div>
+
+        <form class="signup-form" action="#" method="post">
+            <div class="form-group">
+                <input type="text" id="firstName" name="firstName" class="form-input" placeholder="Name" required>
+            </div>
+
+            <div class="form-group">
+                <input type="email" id="email" name="email" class="form-input" placeholder="Email" required>
+            </div>
+
+            <button type="submit" class="form-button">SUBSCRIBE</button>
+        </form>
+    </section>
+
+    <footer>
+        &copy; 2023 SARA EKESON | All rights reserved.
+        <p>Developed & Maintained by Panda</p>
+    </footer>
 
 </body>
 

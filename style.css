@@ -165,8 +165,14 @@ hr {
 
 button a{
     text-decoration: none;
-    color: #333;
+    color: #fff;
     margin: 50px;
+}
+
+button{
+    padding: 20px;
+    background-color: #0056b3;
+    border: none;
 }
 
 footer {
@@ -407,6 +413,7 @@ footer {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
+
     .column {
       flex: 50%;
       max-width: 50%;
@@ -452,6 +459,18 @@ footer {
     display: block;
     color: black;
     }
+
+    .artist-info {
+        text-align: center;
+        padding-bottom: 20px;
+        margin: 20px 0px;
+    }
+
+    .artist-info p {
+        color: #222222;
+        text-align: center;
+        padding: 10px 0px;
+    }
     
   }
   
@@ -471,6 +490,15 @@ footer {
         max-width: 400px;
         margin: 0 10px;
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .body {
+        font-family: 'Krona One', sans-serif;
+        margin: 0;
+        padding: 0;
+        background: url('./images/20231204_230118.jpg') center/cover; 
+        color: white;
+        height: 100%;
     }
   }
 
@@ -499,6 +527,7 @@ footer {
     .hero-section h2{
         font-size: 20px;
     }
+
   }
 
   @media screen and (max-width: 500px) {
@@ -520,6 +549,11 @@ footer {
 
     .hero-section h2{
         font-size: 20px;
+    }
+
+    .hero-section {
+        text-align: center;
+        padding: 0px 30px 10px;
     }
   }
   

@@ -317,10 +317,19 @@
                 margin: 0 10px;
                 grid-template-columns: repeat(2, 1fr);
             }
+            
+            .body {
+                font-family: 'Krona One', sans-serif;
+                margin: 0;
+                padding: 0;
+                background: url('./images/20231204_230118.jpg') center/cover; 
+                color: white;
+                height: 100%;
+            }
           
           }
         
-          @media screen and (max-width: 400px) {
+          @media screen and (max-width: 426px) {
             .dont-miss-text {
                 font-size: 20px;
             }
@@ -345,4 +354,10 @@
             .hero-section h2{
                 font-size: 20px;
             }
+
+            .form-input {
+                width: 350px;
+            }
+            
+
           }
