@@ -97,6 +97,10 @@ footer {
     margin: 140px 0px;
 }
 
+.artist-info p{
+    margin: 10px 0px;
+}
+
 .artist-image {
     text-align: center;
 }

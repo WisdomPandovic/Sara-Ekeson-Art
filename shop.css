@@ -1,6 +1,6 @@
 
         body {
-            font-family: 'Krona One', sans-serif;
+            font-family: "Poppins", sans-serif;
             margin: 0;
             padding: 0;
             background: #f0f0f0; 
@@ -8,7 +8,7 @@
         }
 
         .body {
-            font-family: 'Krona One', sans-serif;
+            font-family: "Poppins", sans-serif;
             margin: 0;
             padding: 0;
             background: url('./images/20231204_230129.jpg') center/cover; 
@@ -159,7 +159,7 @@
             max-width: 300px;
             margin: auto;
             text-align: center;
-            font-family: arial;
+            font-family: "Poppins", sans-serif;
           }
           
           .price {
@@ -212,7 +212,7 @@
             display: block;
             font-size: 80px;
             text-align: center;
-            font-family: Futura, sans-serif;
+            font-family: "Poppins", sans-serif;
             font-weight: 500;
             line-height: 1;
             letter-spacing: 6px;
@@ -256,6 +256,26 @@
         .form-button:hover {
             background: #0056b3;
         }
+
+        .blog-container{
+            width: 80%;
+            margin: auto;
+        }
+
+        .blog-post{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .blog-post img{
+           width: 100%;
+        }
+
+        .txt{
+            font-size: 25px;
+            margin: 20px 0px;
+        }
        
           @media screen and (max-width: 800px) {
 
@@ -296,6 +316,13 @@
                 display: block;
                 color: black;
                 }
+
+                .blog-post{
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 20px;
+                }
+        
           }
         
           @media screen and (max-width: 600px) {
@@ -319,13 +346,20 @@
             }
             
             .body {
-                font-family: 'Krona One', sans-serif;
+                font-family: "Poppins", sans-serif;
                 margin: 0;
                 padding: 0;
                 background: url('./images/20231204_230118.jpg') center/cover; 
                 color: white;
                 height: 100%;
             }
+
+            .blog-post{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+    
           
           }
         
@@ -359,5 +393,10 @@
                 width: 350px;
             }
             
-
+            .blog-post{
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                gap: 20px;
+            }
+    
           }
