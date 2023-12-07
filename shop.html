@@ -159,6 +159,9 @@
         </div>
     </div>
 
+    <button id="back-to-top" onclick="scrollToTop()">Back to Top</button>
+
+
     <!-- <section class="subscribe">
         <div class="dont-miss-section">
             <p class="dont-miss-text">DON'T MISS A THING</p>
@@ -184,4 +187,29 @@
     </footer>
 </body>
 <script src="script.js"></script>
+
+
+    <script>
+        // Show the back-to-top button when the user scrolls down
+        window.onscroll = function () {
+            showBackToTopButton();
+        };
+
+        function showBackToTopButton() {
+            const button = document.getElementById('back-to-top');
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                button.style.display = 'block';
+            } else {
+                button.style.display = 'none';
+            }
+        }
+
+        // Scroll to the top when the button is clicked
+        function scrollToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+
 </html>

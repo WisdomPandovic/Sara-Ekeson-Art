@@ -19,6 +19,7 @@ fetch(apiUrl)
                 <h2>${post.title}</h2>
                 <p>${post.body}</p>
                 <p>Published on: ${new Date().toLocaleDateString()}</p>
+                <button>View Post</button>
                 <hr>
             `;
             blogContainer.appendChild(postElement);
